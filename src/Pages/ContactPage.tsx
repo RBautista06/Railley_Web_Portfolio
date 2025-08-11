@@ -1,8 +1,11 @@
+import NavLinks from "../Components/NavLinks";
 
 const Contacts = () => {
   return (
-    <div>Contacts</div>
-  )
-}
+    <div>
+      <NavLinks />
+    </div>
+  );
+};
 
-export default Contacts
+export default Contacts;

@@ -1,7 +1,11 @@
+import NavLinks from "../Components/NavLinks";
+
 const About = () => {
   return (
-    <div>About</div>
-  )
-}
+    <div>
+      <NavLinks />
+    </div>
+  );
+};
 
-export default About
+export default About;

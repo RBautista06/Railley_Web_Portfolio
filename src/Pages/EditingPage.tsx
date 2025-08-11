@@ -1,8 +1,11 @@
+import NavLinks from "../Components/NavLinks";
 
 const Editing = () => {
   return (
-    <div>Editing</div>
-  )
-}
+    <div>
+      <NavLinks />
+    </div>
+  );
+};
 
-export default Editing
+export default Editing;

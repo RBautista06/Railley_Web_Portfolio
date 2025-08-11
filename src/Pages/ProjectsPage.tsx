@@ -1,8 +1,11 @@
+import NavLinks from "../Components/NavLinks";
 
 const Projects = () => {
   return (
-    <div>Projects</div>
-  )
-}
+    <div>
+      <NavLinks />
+    </div>
+  );
+};
 
-export default Projects
+export default Projects;
