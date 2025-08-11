@@ -29,7 +29,7 @@ const ThemeSwatcher = () => {
         <ChevronDown size={20} />
       </div>
       <ul
-        className="dropdown-content  bg-base-200 rounded-lg mt-2 z-[1] w-auto p-2 shadow-sm flex flex-col gap-2  h-130 overflow-y-auto"
+        className="dropdown-content  bg-base-200 rounded-lg mt-2 z-[1] w-auto p-2 shadow-sm flex flex-col gap-2  h-120 overflow-y-auto"
         tabIndex={0}
         style={{
           scrollbarWidth: "none", // Firefox

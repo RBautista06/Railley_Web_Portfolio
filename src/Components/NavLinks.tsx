@@ -4,15 +4,15 @@ import {
   DisclosurePanel,
 } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import { Link } from "react-router";
+import { Link, useLocation } from "react-router-dom"; // <-- useLocation here
 import ThemeSwatcher from "./ThemeSwatcher";
 
 const navigation = [
-  { name: "Home", to: "/", current: true },
-  { name: "Programming", to: "/programming", current: false },
-  { name: "Editing", to: "/editing", current: false },
-  { name: "About Us", to: "/about", current: false },
-  { name: "Contact Us", to: "/contact", current: false },
+  { name: "Home", to: "/" },
+  { name: "Programming", to: "/programming" },
+  { name: "Editing", to: "/editing" },
+  { name: "About Us", to: "/about" },
+  { name: "Contact Us", to: "/contact" },
 ];
 
 function classNames(...classes: string[]) {
@@ -20,6 +20,8 @@ function classNames(...classes: string[]) {
 }
 
 export default function NavLinks() {
+  const location = useLocation(); // <-- get current URL path
+
   return (
     <Disclosure as="nav" className="shadow-xl bg-base-100">
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -54,20 +56,23 @@ export default function NavLinks() {
             {/* Desktop Nav */}
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-4">
-                {navigation.map((item) => (
-                  <Link
-                    key={item.name}
-                    to={item.to}
-                    aria-current={item.current ? "page" : undefined}
-                    className={classNames(
-                      item.current
-                        ? "bg-primary text-primary-content"
-                        : "text-base-content/70 hover:bg-base-300 hover:text-base-content",
-                      "rounded-md px-3 py-2 text-sm font-medium transition-colors"
-                    )}>
-                    {item.name}
-                  </Link>
-                ))}
+                {navigation.map((item) => {
+                  const isCurrent = location.pathname === item.to; // <-- compare paths
+                  return (
+                    <Link
+                      key={item.name}
+                      to={item.to}
+                      aria-current={isCurrent ? "page" : undefined}
+                      className={classNames(
+                        isCurrent
+                          ? "bg-primary text-primary-content"
+                          : "text-base-content/70 hover:bg-base-300 hover:text-base-content",
+                        "rounded-md px-3 py-2 text-sm font-medium transition-colors"
+                      )}>
+                      {item.name}
+                    </Link>
+                  );
+                })}
               </div>
             </div>
           </div>
@@ -82,21 +87,24 @@ export default function NavLinks() {
       {/* Mobile Nav */}
       <DisclosurePanel className="sm:hidden bg-base-100">
         <div className="space-y-1 px-2 pt-2 pb-3">
-          {navigation.map((item) => (
-            <Link to={item.to} key={item.name}>
-              <DisclosureButton
-                as="a"
-                aria-current={item.current ? "page" : undefined}
-                className={classNames(
-                  item.current
-                    ? "bg-primary text-primary-content"
-                    : "text-base-content/70 hover:bg-base-300 hover:text-base-content",
-                  "block rounded-md px-3 py-2 text-base font-medium transition-colors"
-                )}>
-                {item.name}
-              </DisclosureButton>
-            </Link>
-          ))}
+          {navigation.map((item) => {
+            const isCurrent = location.pathname === item.to;
+            return (
+              <Link to={item.to} key={item.name}>
+                <DisclosureButton
+                  as="a"
+                  aria-current={isCurrent ? "page" : undefined}
+                  className={classNames(
+                    isCurrent
+                      ? "bg-primary text-primary-content"
+                      : "text-base-content/70 hover:bg-base-300 hover:text-base-content",
+                    "block rounded-md px-3 py-2 text-base font-medium transition-colors"
+                  )}>
+                  {item.name}
+                </DisclosureButton>
+              </Link>
+            );
+          })}
         </div>
       </DisclosurePanel>
     </Disclosure>
