@@ -16,8 +16,8 @@ const Footer = () => {
             />
           </div>
           <div className="flex-1 flex">
-            <div className="flex gap-10 justify-between items-start">
-              <div className="flex flex-col text-center">
+            <div className="flex gap-5 justify-between items-start">
+              <div className="flex flex-col text-center ">
                 <span className="font-bold ">Home</span>
                 <Link to={"/programming"}>Technical Skills</Link>
                 <Link to={"/programming"}>Soft Skills</Link>
@@ -43,7 +43,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="border-b border-t py-2 flex gap-5 justify-center items-center font-semibold">
+        <div className="border-b border-t py-2 flex gap-5 justify-center items-center ">
           <Link to={"/"}>Home</Link>
           <Link to={"/programming"}>Programming</Link>
           <Link to={"/editing"}>Editing</Link>
@@ -51,7 +51,9 @@ const Footer = () => {
           <Link to={"/contact"}>Contact</Link>
         </div>
         <div className="pb-2 text-center text-sm">
-          <span className="opacity-80">&copy; Copyright 2025 All Rights Reserved</span>
+          <span className="opacity-80">
+            &copy; Copyright 2025 All Rights Reserved
+          </span>
         </div>
       </div>
     </div>
