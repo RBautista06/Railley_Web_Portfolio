@@ -18,24 +18,24 @@ const Footer = () => {
           <div className="flex">
             <div className="flex gap-10 justify-between items-start">
               <div className="flex flex-col text-center ">
-                <span className="font-bold ">Home</span>
+                <span className="font-semibold ">Home</span>
                 <Link to={"/programming"}>Technical Skills</Link>
                 <Link to={"/programming"}>Soft Skills</Link>
               </div>
               <div className="flex flex-col text-center">
-                <span className="font-bold ">Programming</span>
+                <span className="font-semibold ">Programming</span>
                 <Link to={"/programming"}>School Projects</Link>
                 <Link to={"/programming"}>Personal Projects</Link>
                 <Link to={"/programming"}>TechStack</Link>
               </div>
               <div className="flex flex-col text-center">
-                <span className="font-bold ">Editing</span>
+                <span className="font-semibold ">Editing</span>
                 <Link to={"/editing"}>Photo Editing</Link>
                 <Link to={"/editing"}>Video Editing</Link>
                 <Link to={"/editing"}>3D Modeling</Link>
               </div>
               <div className="flex flex-col text-center">
-                <span className="font-bold ">About</span>
+                <span className="font-semibold ">About</span>
                 <Link to={"/about"}>Background</Link>
                 <Link to={"/about"}>Personal Information</Link>
                 <Link to={"/about"}>Achievements</Link>
@@ -43,7 +43,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="border-b border-t py-2 flex gap-5 justify-center items-center ">
+        <div className="border-b border-t py-2 flex gap-5 justify-center items-center font-semibold">
           <Link to={"/"}>Home</Link>
           <Link to={"/programming"}>Programming</Link>
           <Link to={"/editing"}>Editing</Link>
