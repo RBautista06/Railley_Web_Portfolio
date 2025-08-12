@@ -41,7 +41,10 @@ const HeroContainer = () => {
         </Link>
       </div>
       <div className="flex flex-end justify-center pt-10 z-100">
-        <img src="/img/railleyphotos/gradpic.png" className="w-120" />
+        <img
+          src="/img/railleyphotos/gradpic.png"
+          className="w-120 drop-shadow-2xl"
+        />
       </div>
     </section>
   );
