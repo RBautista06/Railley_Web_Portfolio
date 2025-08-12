@@ -1,18 +1,25 @@
 import { EnvelopeIcon } from "@heroicons/react/24/outline";
 import { Link } from "react-router";
-
+import styles from "./heroContainer.module.css";
 const HeroContainer = () => {
   return (
-    <section className="flex justify-between  border relative bg-gradient-to-b from-primary/30 overflow-hidden">
-      <div
+    <section className="flex justify-between  mt-3 relative bg-gradient-to-b from-primary/30 overflow-hidden rounded-lg">
+      {/* <div
         className="absolute z-1 -mt-55 right-20 rounded-full bg-gradient-to-b from-primary/10 to-primary h-160 w-160 shadow-2xl shadow-base-300
-      md:-right-20 md:-mt-70"></div>
+      md:-right-20 md:-mt-70"></div> */}
+      <div className={`${styles.backGroundContainer} text-lg w-full `}>
+        <div
+          className={`${styles.backGroundImage} text-lg w-full bg-base-300`}></div>
+      </div>
       <div
-        className="absolute z-1 mt-100 self-center  rounded-t-full bg-gradient-to-b from-primary to-primary/10 h-70 w-full shadow-2xl shadow-base-300
-      md:w-160 md:h-160 md:mt-200 md:left-15"></div>
+        className="absolute z-2 -mt-55 right-20 rounded-full bg-gradient-to-b from-primary/40 to-primary h-160 w-160 shadow-2xl shadow-base-300
+      md:right-10 md:-mt-90"></div>
+      <div
+        className="absolute z-2 mt-100 self-center  rounded-t-full bg-gradient-to-b from-primary to-primary/10 h-70 w-full shadow-2xl shadow-base-300
+      md:w-160 md:h-160 md:mt-200 md:left-40"></div>
 
       <div className="flex flex-col  gap-10 justify-center items-start px-10 z-100">
-        <h1 className="z-2 font-bold text-2xl lg:text-left w-full">
+        <h1 className="z-3 font-bold text-2xl lg:text-left w-full">
           Hello there I'm
         </h1>
         <div className="flex flex-col gap-2">
@@ -28,7 +35,7 @@ const HeroContainer = () => {
 
         <Link
           to="/contact"
-          className="flex p-4 h-auto border shadow-md gap-2 rounded-md  lg:p-2 justify-center items-center lg:px-5 btn-primary btn">
+          className="flex p-4 h-auto border-white border-2 shadow-md gap-2 rounded-md  lg:p-4 justify-center items-center lg:px-5 btn-primary btn text-white text-md">
           Get In Touch
           <EnvelopeIcon className="h-5 self-center" />
         </Link>
