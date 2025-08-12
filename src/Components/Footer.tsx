@@ -8,15 +8,15 @@ const Footer = () => {
           <span className="font-bold text-lg">Contact Us</span>
         </div>
         <div className="flex justify-between items-center px-5 py-2">
-          <div className="flex-1">
+          <div className="">
             <img
               src="/img/graphics/ZENITHLOGOWITHNAME_WHITE.png"
               alt=""
-              className="w-120"
+              className="w-100"
             />
           </div>
-          <div className="flex-1 flex">
-            <div className="flex gap-5 justify-between items-start">
+          <div className="flex">
+            <div className="flex gap-10 justify-between items-start">
               <div className="flex flex-col text-center ">
                 <span className="font-bold ">Home</span>
                 <Link to={"/programming"}>Technical Skills</Link>
