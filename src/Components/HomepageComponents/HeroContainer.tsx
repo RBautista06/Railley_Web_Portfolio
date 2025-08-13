@@ -13,10 +13,11 @@ const HeroContainer = () => {
       </div>
       <div
         className="absolute z-2 -mt-55 right-20 rounded-full bg-gradient-to-b from-primary/40 to-primary h-160 w-160 shadow-2xl shadow-base-300
-      md:right-10 md:-mt-90"></div>
+  md:right-10 md:-mt-90 animate-[slideInRight_1.5s_ease-out_forwards]"></div>
+
       <div
-        className="absolute z-2 mt-100 self-center  rounded-t-full bg-gradient-to-b from-primary to-primary/10 h-70 w-full shadow-2xl shadow-base-300
-      md:w-160 md:h-160 md:mt-200 md:left-40"></div>
+        className="absolute z-2 mt-100 self-center rounded-t-full bg-gradient-to-b from-primary to-primary/10 h-70 w-full shadow-2xl shadow-base-300
+  md:w-160 md:h-160 md:mt-200 md:left-40 animate-[slideInLeft_1.5s_ease-out_forwards]"></div>
 
       <div className="flex flex-col  gap-10 justify-center items-start px-10 z-100">
         <h1 className="z-3 font-bold text-2xl lg:text-left w-full">
