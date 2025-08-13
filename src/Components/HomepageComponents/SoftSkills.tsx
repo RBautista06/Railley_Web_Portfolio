@@ -1,6 +1,6 @@
 export default function SoftSkills() {
   return (
-    <div className=" grid justify-center items-center mt-3">
+    <div className=" grid justify-center items-center pt-3" id="softSkills">
       <div className="relative grid  overflow-hidden justify-center items-center text-left max-w-7xl lg:bg-none">
         <div className="p-2 bg-base-300 bg-gradient-to-r to-base-200  rounded-sm mt-2 lg:mt-0 max-w-7xl mb-2 shadow-xl">
           <h1 className="text-xl font-bold text-shadow">Soft Skills</h1>

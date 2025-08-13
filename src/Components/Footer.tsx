@@ -19,26 +19,80 @@ const Footer = () => {
             <div className="flex gap-10 justify-between items-start">
               <div className="flex flex-col text-center ">
                 <span className="font-semibold ">Home</span>
-                <Link to={"/programming"}>Technical Skills</Link>
-                <Link to={"/programming"}>Soft Skills</Link>
+                <Link
+                  to="/"
+                  onClick={() => {
+                    document
+                      .getElementById("technicalSkills")
+                      ?.scrollIntoView({ behavior: "smooth" });
+                  }}
+                  className="opacity-80 hover:opacity-100 hover:scale-110 transition-all duration-300">
+                  Technical Skills
+                </Link>
+                <Link
+                  to="/"
+                  onClick={() => {
+                    document
+                      .getElementById("softSkills")
+                      ?.scrollIntoView({ behavior: "smooth" });
+                  }}
+                  className="opacity-80 hover:opacity-100 hover:scale-110 transition-all duration-300">
+                  Soft Skills
+                </Link>
               </div>
               <div className="flex flex-col text-center">
                 <span className="font-semibold ">Programming</span>
-                <Link to={"/programming"}>School Projects</Link>
-                <Link to={"/programming"}>Personal Projects</Link>
-                <Link to={"/programming"}>TechStack</Link>
+                <Link
+                  to={"/programming"}
+                  className="opacity-80 hover:opacity-100 hover:scale-110 transition-all duration-300">
+                  School Projects
+                </Link>
+                <Link
+                  to={"/programming"}
+                  className="opacity-80 hover:opacity-100 hover:scale-110 transition-all duration-300">
+                  Personal Projects
+                </Link>
+                <Link
+                  to={"/programming"}
+                  className="opacity-80 hover:opacity-100 hover:scale-110 transition-all duration-300">
+                  TechStack
+                </Link>
               </div>
               <div className="flex flex-col text-center">
                 <span className="font-semibold ">Editing</span>
-                <Link to={"/editing"}>Photo Editing</Link>
-                <Link to={"/editing"}>Video Editing</Link>
-                <Link to={"/editing"}>3D Modeling</Link>
+                <Link
+                  to={"/editing"}
+                  className="opacity-80 hover:opacity-100 hover:scale-110 transition-all duration-300">
+                  Photo Editing
+                </Link>
+                <Link
+                  to={"/editing"}
+                  className="opacity-80 hover:opacity-100 hover:scale-110 transition-all duration-300">
+                  Video Editing
+                </Link>
+                <Link
+                  to={"/editing"}
+                  className="opacity-80 hover:opacity-100 hover:scale-110 transition-all duration-300">
+                  3D Modeling
+                </Link>
               </div>
               <div className="flex flex-col text-center">
                 <span className="font-semibold ">About</span>
-                <Link to={"/about"}>Background</Link>
-                <Link to={"/about"}>Personal Information</Link>
-                <Link to={"/about"}>Achievements</Link>
+                <Link
+                  to={"/about"}
+                  className="opacity-80 hover:opacity-100 hover:scale-110 transition-all duration-300">
+                  Background
+                </Link>
+                <Link
+                  to={"/about"}
+                  className="opacity-80 hover:opacity-100 hover:scale-110 transition-all duration-300">
+                  Personal Information
+                </Link>
+                <Link
+                  to={"/about"}
+                  className="opacity-80 hover:opacity-100 hover:scale-110 transition-all duration-300">
+                  Achievements
+                </Link>
               </div>
             </div>
           </div>

@@ -4,7 +4,9 @@
 @plugin "daisyui" {
   themes: all;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 :root {
   font-family: "Poppins", serif;
   line-height: 1.5;

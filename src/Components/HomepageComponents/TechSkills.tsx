@@ -28,7 +28,9 @@ export default function TechSkills() {
   }, [selectedIndex]);
 
   return (
-    <div className="grid  lg:bg-gradient-to-b   justify-center items-center mt-3">
+    <div
+      className="grid  lg:bg-gradient-to-b   justify-center items-center pt-3"
+      id="technicalSkills">
       <div className=" max-w-7xl">
         <div className="p-2 bg-base-300  bg-gradient-to-r to-base-200  rounded-sm mt-2 lg:mt-0 max-w-7xl mb-2 shadow-xl">
           <h1 className="text-xl font-bold text-shadow text-left">
