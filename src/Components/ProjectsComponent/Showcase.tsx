@@ -1,18 +1,33 @@
-import { Check } from "lucide-react";
+import { Check, GithubIcon } from "lucide-react";
 import { useState } from "react";
 
-export interface ShowcaseData {
+export type ShowcaseData = {
   media: string[];
   steps: string[];
-  status?: "Complete" | "Ongoing";
-}
+  repository: string;
+  status: string;
+  languages: string[];
+};
 
-const Showcase = ({ media, steps, status = "Complete" }: ShowcaseData) => {
+type ShowcaseProps = ShowcaseData & {
+  componentIndex: number;
+};
+
+const Showcase = ({
+  media,
+  steps,
+  repository,
+  status = "Complete",
+  componentIndex,
+  languages,
+}: ShowcaseProps) => {
   const [selectedIndex, setSelectedIndex] = useState(0);
+
   return (
-    <div className="flex gap-10 mt-3 bg-base-300 p-4 rounded-lg">
+    <div className="flex gap-3   bg-base-300 p-4 mt-3 rounded-lg  ">
+      {/* Media Section */}
       <div
-        className="relative p-2  sm:grid bg-gradient-to-b to-blue-950 overflow-hidden justify-center text-left
+        className="relative p-2 sm:grid bg-gradient-to-b to-blue-950 overflow-hidden justify-center text-left
           lg:w-[50%] lg:p-0 lg:bg-none flex-1">
         <div className="grid relative mt-2 rounded-sm overflow-hidden w-full aspect-video lg:mt-0">
           <div className="flex w-full h-full">
@@ -34,20 +49,22 @@ const Showcase = ({ media, steps, status = "Complete" }: ShowcaseData) => {
           </div>
         </div>
 
+        {/* Media Switcher Dots */}
         <div className="flex align-center gap-2 p-3 bg-base-100 justify-center shadow-sm rounded-sm mt-3">
           {media.map((_, index) => (
             <input
               key={index}
               type="radio"
-              name="mediaSwitcher"
+              name={`mediaSwitcher-${componentIndex}`} // now works
               checked={selectedIndex === index}
               onChange={() => setSelectedIndex(index)}
-              className=""
             />
           ))}
         </div>
       </div>
 
+      {/* Steps Section */}
+      <div className="flex flex-col gap-"></div>
       <ul className="steps steps-vertical flex-1">
         {steps.map((step, index) => (
           <li className="step step-primary" key={index}>
@@ -58,6 +75,39 @@ const Showcase = ({ media, steps, status = "Complete" }: ShowcaseData) => {
           </li>
         ))}
 
+        {/* Repository Link */}
+        <li className="step step-primary">
+          <span className="step-icon">
+            <Check size={18} />
+          </span>
+          <span className="text-left text-sm flex gap-2 items-center  hover:scale-105 duration-300 transition-all ">
+            <div className="flex gap-x-2 justify-start flex-wrap">
+              {languages.map((src, index) => (
+                <img
+                  key={`prog-${index}`}
+                  src={src}
+                  alt={`Programming logo ${index + 1}`}
+                  className="size-8 object-contain"
+                />
+              ))}
+            </div>
+          </span>
+        </li>
+        <li className="step step-primary">
+          <span className="step-icon">
+            <Check size={18} />
+          </span>
+          <span className="text-left text-sm flex gap-2 items-center  hover:scale-105 duration-300 transition-all ">
+            <div className="rounded-full bg-white p-1">
+              <GithubIcon size={18} className="text-base-300" />
+            </div>
+            <a href={repository} target="_blank" rel="noopener noreferrer">
+              {repository}
+            </a>
+          </span>
+        </li>
+
+        {/* Status Badge */}
         <li className="step step-primary">
           <span className="step-icon">
             <Check size={18} />
@@ -70,7 +120,7 @@ const Showcase = ({ media, steps, status = "Complete" }: ShowcaseData) => {
             }`}>
             <div className="inline-grid *:[grid-area:1/1] items-center">
               <div
-                className={`status  ${
+                className={`status ${
                   status === "Complete" ? "status-success" : "status-warning"
                 } animate-ping`}></div>
               <div

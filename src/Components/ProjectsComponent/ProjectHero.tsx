@@ -7,6 +7,7 @@ const programmingLogo = [
   { src: "/img/logo/php.png", top: "65%", left: "60%" },
   { src: "/img/logo/express.png", top: "75%", left: "30%" },
   { src: "/img/logo/nodejs.png", top: "40%", left: "80%" },
+  { src: "/img/logo/ts.png", top: "50%", left: "20%" },
   { src: "/img/logo/react.png", top: "15%", left: "45%" },
   { src: "/img/logo/mongodb.png", top: "35%", left: "25%" },
   { src: "/img/logo/msql.png", top: "55%", left: "90%" },
