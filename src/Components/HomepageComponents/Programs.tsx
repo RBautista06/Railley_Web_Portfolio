@@ -10,8 +10,11 @@ const programmingLogo = [
   "/img/logo/msql.png",
   "/img/logo/redux.png",
   "/img/logo/zustand.png",
+  "/img/logo/pinia.png",
   "/img/logo/bootstrap.png",
   "/img/logo/tailwind.png",
+  "/img/logo/vue.png",
+  "/img/logo/vuetify.png",
 ];
 const editingLogo = [
   "/img/logo/sp.png",
@@ -19,6 +22,8 @@ const editingLogo = [
   "/img/logo/pr.png",
   "/img/logo/ai.png",
   "/img/logo/blender.png",
+  "/img/logo/capcut.png",
+  "/img/logo/md.png",
 ];
 
 export default function Programs() {

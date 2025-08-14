@@ -11,8 +11,7 @@ const navigation = [
   { name: "Home", to: "/" },
   { name: "Programming", to: "/programming" },
   { name: "Editing", to: "/editing" },
-  { name: "About Us", to: "/about" },
-  { name: "Contact Us", to: "/contact" },
+  { name: "About", to: "/about" },
 ];
 
 function classNames(...classes: string[]) {

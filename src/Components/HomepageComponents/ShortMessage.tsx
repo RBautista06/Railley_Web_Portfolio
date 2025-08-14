@@ -22,13 +22,15 @@ export default function ShortMessage() {
           <div className="flex gap-2 mt-3 justify-center">
             <Link
               to="/programming"
-              className="px-4 py-2 bg-primary rounded-sm text-sm border-1">
+              className="px-4 py-2 bg-primary rounded-sm text-sm border-1"
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
               View Projects
             </Link>
             <Link
-              to="/contact"
-              className="px-4 py-2 bg-gray-100 rounded-sm text-sm text-primary border-1 border-primary">
-              Contact Me
+              to="/about"
+              className="px-4 py-2 bg-gray-100 rounded-sm text-sm text-primary border-1 border-primary"
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
+              About Railley
             </Link>
           </div>
         </div>

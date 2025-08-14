@@ -35,9 +35,10 @@ const HeroContainer = () => {
         </div>
 
         <Link
-          to="/contact"
-          className="flex p-4 h-auto border-white border-2 shadow-md gap-2 rounded-md  lg:p-4 justify-center items-center lg:px-5 btn-primary btn text-white text-md">
-          Get In Touch
+          to="/about"
+          className="flex p-4 h-auto border-white border-2 shadow-md gap-2 rounded-md  lg:p-4 justify-center items-center lg:px-5 btn-primary btn text-white text-md"
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
+          Learn More
           <EnvelopeIcon className="h-5 self-center" />
         </Link>
       </div>

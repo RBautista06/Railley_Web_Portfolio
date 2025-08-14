@@ -3,9 +3,7 @@ import Programs from "../Components/HomepageComponents/Programs";
 import ShortMessage from "../Components/HomepageComponents/ShortMessage";
 import NavLinks from "../Components/NavLinks";
 import ProjectHero from "../Components/ProjectsComponent/ProjectHero";
-import Showcase, {
-  type ShowcaseData,
-} from "../Components/ProjectsComponent/Showcase";
+import Showcase, { type ShowcaseData } from "../Components/Showcase";
 
 const showcaseProjects: ShowcaseData[] = [
   {
@@ -29,6 +27,7 @@ const showcaseProjects: ShowcaseData[] = [
       "/img/logo/php.png",
     ],
   },
+
   {
     media: [
       "/img/projects/programming/cpse/cpsehomepage.jpeg",
@@ -50,6 +49,31 @@ const showcaseProjects: ShowcaseData[] = [
       "/img/logo/php.png",
     ],
   },
+  {
+    media: [
+      "/img/projects/programming/pisces/Pisces1.png",
+      "/img/projects/programming/pisces/pisces2.png",
+      "/img/projects/programming/pisces/pisces3.png",
+    ],
+    steps: [
+      "PISCES - PEZA Information System on Compliance to Environmental Standards",
+      "A web-based platform developed to monitor environmental compliance, automate reporting, and support sustainable practices for PEZA-registered enterprises.",
+      "Completed as an OJT project with 500 hours of hands-on experience from February to May 2025, including enhanced analytics, real-time monitoring, and improved user experience.",
+    ],
+    repository: "",
+    status: "Complete",
+    languages: [
+      "/img/logo/html-5.png",
+      "/img/logo/css.png",
+      "/img/logo/js.png",
+      "/img/logo/vue.png",
+      "/img/logo/vuetify.png",
+      "/img/logo/pinia.png",
+    ],
+  },
+];
+
+const showcasePersonalProjects: ShowcaseData[] = [
   {
     media: [
       "/img/projects/programming/pokedex/landing.png",
@@ -92,9 +116,11 @@ const showcaseProjects: ShowcaseData[] = [
       "/img/logo/css.png",
       "/img/logo/tailwind.png",
       "/img/logo/ts.png",
+      "/img/logo/html-5.png",
+      "/img/logo/css.png",
+      "/img/logo/js.png",
     ],
   },
-
   {
     media: [
       "/img/projects/programming/realtimechat/chat_landingPage.png",
@@ -118,6 +144,9 @@ const showcaseProjects: ShowcaseData[] = [
       "/img/logo/zustand.png",
       "/img/logo/tailwind.png",
       "/img/logo/mongodb.png",
+      "/img/logo/html-5.png",
+      "/img/logo/css.png",
+      "/img/logo/js.png",
     ],
   },
   {
@@ -128,7 +157,7 @@ const showcaseProjects: ShowcaseData[] = [
       "/img/projects/programming/Lynx/SignupPage.png",
     ],
     steps: [
-      "Lynx",
+      "Lynx - Social Media",
       "A social media platform where users can share posts, engage with others through likes and comments, and connect in real time.",
       "Developed as a personal learning project in July 2025 to gain hands-on experience with the MERN stack, TypeScript, Redux, and Socket.IO.",
     ],
@@ -143,6 +172,9 @@ const showcaseProjects: ShowcaseData[] = [
       "/img/logo/redux.png",
       "/img/logo/tailwind.png",
       "/img/logo/mongodb.png",
+      "/img/logo/html-5.png",
+      "/img/logo/css.png",
+      "/img/logo/js.png",
     ],
   },
 ];
@@ -153,7 +185,20 @@ const Projects = () => {
       <div className="flex justify-center h-auto">
         <div className="w-7xl h-auto flex flex-col">
           <ProjectHero />
+          <div
+            className="p-4 rounded-lg mt-3 w-full bg-base-300"
+            id="school-projects">
+            <span className="font-bold text-lg">School Projects</span>
+          </div>
           {showcaseProjects.map((project, index) => (
+            <Showcase key={index} componentIndex={index} {...project} />
+          ))}
+          <div
+            className="p-4 rounded-lg mt-3 w-full bg-base-300"
+            id="personal-projects">
+            <span className="font-bold text-lg">Personal Projects</span>
+          </div>
+          {showcasePersonalProjects.map((project, index) => (
             <Showcase key={index} componentIndex={index} {...project} />
           ))}
           <ShortMessage />

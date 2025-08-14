@@ -15,6 +15,9 @@ const programmingLogo = [
   { src: "/img/logo/zustand.png", top: "5%", left: "85%" },
   { src: "/img/logo/bootstrap.png", top: "80%", left: "10%" },
   { src: "/img/logo/tailwind.png", top: "80%", left: "50%" },
+  { src: "/img/logo/pinia.png", top: "80%", left: "68%" },
+  { src: "/img/logo/vue.png", top: "20%", left: "55%" },
+  { src: "/img/logo/vuetify.png", top: "80%", left: "40%" },
 ];
 
 const ProjectHero = () => {
@@ -25,7 +28,6 @@ const ProjectHero = () => {
         <div
           className={`${styles.backGroundImage} text-lg w-full bg-base-100`}></div>
       </div>
-
       {programmingLogo.map((logo, index) => (
         <img
           key={index}

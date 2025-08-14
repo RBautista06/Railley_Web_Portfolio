@@ -6,7 +6,6 @@ import Homepage from "./Pages/Homepage.tsx";
 import Projects from "./Pages/ProjectsPage.tsx";
 import Editing from "./Pages/EditingPage.tsx";
 import About from "./Pages/AboutPage.tsx";
-import Contacts from "./Pages/ContactPage.tsx";
 
 const router = createBrowserRouter([
   {
@@ -16,10 +15,6 @@ const router = createBrowserRouter([
   {
     path: "/programming",
     element: <Projects />,
-  },
-  {
-    path: "/contact",
-    element: <Contacts />,
   },
   {
     path: "/editing",
