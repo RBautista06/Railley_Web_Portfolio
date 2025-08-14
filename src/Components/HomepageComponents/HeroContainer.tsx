@@ -4,9 +4,6 @@ import styles from "./heroContainer.module.css";
 const HeroContainer = () => {
   return (
     <section className="flex justify-between  mt-3 relative bg-gradient-to-b from-primary/30 overflow-hidden rounded-lg ">
-      {/* <div
-        className="absolute z-1 -mt-55 right-20 rounded-full bg-gradient-to-b from-primary/10 to-primary h-160 w-160 shadow-2xl shadow-base-300
-      md:-right-20 md:-mt-70"></div> */}
       <div className={`${styles.backGroundContainer} text-lg w-full `}>
         <div
           className={`${styles.backGroundImage} text-lg w-full bg-base-300`}></div>

@@ -1,4 +1,4 @@
-import { Check, GithubIcon } from "lucide-react";
+import { Check, Circle, GithubIcon } from "lucide-react";
 import { useState } from "react";
 
 export type ShowcaseData = {
@@ -69,7 +69,7 @@ const Showcase = ({
         {steps.map((step, index) => (
           <li className="step step-primary" key={index}>
             <span className="step-icon">
-              <Check size={18} />
+              <Circle size={18} className="fill-gray-100 shadow-xl" />
             </span>
             <p
               className={`text-left ${
@@ -83,7 +83,7 @@ const Showcase = ({
         {/* Repository Link */}
         <li className="step step-primary">
           <span className="step-icon">
-            <Check size={18} />
+            <Circle size={18} className="fill-gray-100 shadow-xl" />
           </span>
           <span className="text-left text-sm flex gap-2 items-center  ">
             <div className="flex gap-x-2 justify-start flex-wrap">
@@ -101,7 +101,7 @@ const Showcase = ({
         {repository && (
           <li className="step step-primary">
             <span className="step-icon">
-              <Check size={18} />
+              <Circle size={18} className="fill-gray-100 shadow-xl" />
             </span>
             <span className="text-left text-sm flex gap-2 items-center  hover:scale-105 duration-300 transition-all ">
               <div className="rounded-full bg-white p-1">
@@ -118,7 +118,7 @@ const Showcase = ({
         {repository && (
           <li className="step step-primary">
             <span className="step-icon">
-              <Check size={18} />
+              <Circle size={18} className="fill-gray-100 shadow-xl" />
             </span>
             <div
               className={`text-sm text-left flex gap-2 border p-2 rounded-lg  ${
