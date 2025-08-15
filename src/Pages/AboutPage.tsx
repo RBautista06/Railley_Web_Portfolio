@@ -1,4 +1,5 @@
 import AboutHero from "../Components/AboutComponent/AboutHero";
+import Achievements from "../Components/AboutComponent/Achievements";
 import Certificate from "../Components/AboutComponent/Certificate";
 import Education from "../Components/AboutComponent/Education";
 import Footer from "../Components/Footer";
@@ -14,6 +15,7 @@ const About = () => {
         <div className="w-7xl h-auto flex flex-col">
           <AboutHero />
           <Education />
+          <Achievements />
           <Certificate />
           <ShortMessage />
           <Programs />
