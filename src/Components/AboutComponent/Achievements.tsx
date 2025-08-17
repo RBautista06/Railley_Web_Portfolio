@@ -42,17 +42,14 @@ const Achievements = () => {
             <span className="text-center font-bold">Achievements</span>
             <div className="flex gap-2">
               <CircleStar className="text-yellow-400" />
-              <CircleStar className="text-yellow-400" />
-              <CircleStar className="text-yellow-400" />
-              <CircleStar className="text-yellow-400" />
             </div>
           </div>
 
-          <div className="flex flex-wrap gap-4">
+          <div className="flex flex-wrap gap-4 justify-center items-center">
             {achievements.map((achievement, idx) => (
               <div
                 key={idx}
-                className="gap-4 flex flex-col p-4 bg-base-100 rounded-lg h-auto w-75 cursor-pointer hover:shadow-lg transition"
+                className="gap-4 flex flex-col p-4 bg-base-100 rounded-lg h-auto w-75 cursor-pointer hover:shadow-lg transition hover:scale-105 duration-300"
                 onClick={() => setSelected(achievement)}>
                 <div className="h-80 overflow-hidden rounded-lg">
                   <img

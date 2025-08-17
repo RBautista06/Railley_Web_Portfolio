@@ -1,4 +1,4 @@
-const programmingLogo = [
+const allLogos = [
   "/img/logo/html-5.png",
   "/img/logo/css.png",
   "/img/logo/js.png",
@@ -15,8 +15,6 @@ const programmingLogo = [
   "/img/logo/tailwind.png",
   "/img/logo/vue.png",
   "/img/logo/vuetify.png",
-];
-const editingLogo = [
   "/img/logo/sp.png",
   "/img/logo/ps.png",
   "/img/logo/pr.png",
@@ -29,29 +27,16 @@ const editingLogo = [
 export default function Programs() {
   return (
     <div className="pb-4 flex flex-col justify-center items-center mt-3">
-      <div className="max-w-7xl min-w-4xl flex flex-col items-center">
-        <div className="flex flex-col gap-2">
-          <div className="flex gap-x-2 justify-center flex-wrap">
-            {programmingLogo.map((src, index) => (
-              <img
-                key={`prog-${index}`}
-                src={src}
-                alt={`Programming logo ${index + 1}`}
-                className="size-10 object-contain"
-              />
-            ))}
-          </div>
-
-          <div className="flex gap-x-2 justify-center flex-wrap">
-            {editingLogo.map((src, index) => (
-              <img
-                key={`edit-${index}`}
-                src={src}
-                alt={`Editing logo ${index + 1}`}
-                className="size-10 object-contain"
-              />
-            ))}
-          </div>
+      <div className="max-w-7xl w-full flex flex-col items-center">
+        <div className="flex gap-2 justify-center flex-wrap md:w-[60%] sm:w-[100%]">
+          {allLogos.map((src, index) => (
+            <img
+              key={index}
+              src={src}
+              alt={`Logo ${index + 1}`}
+              className="size-10 object-contain"
+            />
+          ))}
         </div>
       </div>
     </div>
