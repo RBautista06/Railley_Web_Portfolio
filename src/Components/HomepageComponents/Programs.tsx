@@ -6,9 +6,9 @@ const allLogos = [
   "./img/logo/java.png",
   "./img/logo/python.png",
   "./img/logo/express.png",
-  "./img/logo/express.png",
   "./img/logo/nodejs.png",
   "./img/logo/react.png",
+  "./img/logo/flutter.png",
   "./img/logo/mongodb.png",
   "./img/logo/msql.png",
   "./img/logo/redux.png",
@@ -32,7 +32,7 @@ export default function Programs() {
   return (
     <div className="pb-4 flex flex-col justify-center items-center mt-3 mx-2 md:mx-0">
       <div className="max-w-7xl w-full flex flex-col items-center">
-        <div className="flex gap-2 justify-center flex-wrap md:w-[60%] sm:w-[100%]">
+        <div className="flex gap-2 justify-center flex-wrap md:w-[60%] sm:w-[90%]">
           {allLogos.map((src, index) => (
             <img
               key={index}
