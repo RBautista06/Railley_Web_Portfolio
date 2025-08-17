@@ -32,7 +32,7 @@ const Achievements = () => {
   return (
     <>
       {/* Main Achievements Section */}
-      <div className="flex mt-3 relative bg-base-200 overflow-hidden rounded-lg">
+      <div className="flex mt-3 relative bg-base-200 overflow-hidden rounded-lg" id="achievements">
         <div className={`${styles.backGroundContainer} text-lg w-full`}>
           <div
             className={`${styles.backGroundImage} text-lg w-full bg-base-100`}></div>
@@ -49,7 +49,7 @@ const Achievements = () => {
             {achievements.map((achievement, idx) => (
               <div
                 key={idx}
-                className="gap-2 md:gap-4 flex flex-col p-2 md:p-4 bg-base-100 rounded-lg h-contain w-57 md:w-75 cursor-pointer hover:shadow-lg transition hover:scale-105 duration-300 h-[20rem] md:h-auto"
+                className="gap-2 md:gap-4 flex flex-col p-2 md:p-4 bg-base-100 rounded-lg h-contain w-49 md:w-75 lg:w-75 cursor-pointer hover:shadow-lg transition hover:scale-105 duration-300 h-[20rem] md:h-auto"
                 onClick={() => setSelected(achievement)}>
                 <div className="h-60 md:h-80 overflow-hidden rounded-lg">
                   <img

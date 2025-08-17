@@ -17,7 +17,9 @@ const skillsData = [
 ];
 const Education = () => {
   return (
-    <div className="flex justify-center  mt-3 relative bg-base-200 overflow-hidden rounded-lg md:flex-row flex-col md:gap-0 gap-3 py-3 md:py-0">
+    <div
+      id="education"
+      className="flex justify-center  mt-3 relative bg-base-200 overflow-hidden rounded-lg md:flex-row flex-col md:gap-0 gap-3 py-3 md:py-0">
       <div className={`${styles.backGroundContainer} text-lg w-full`}>
         <div
           className={`${styles.backGroundImage} text-lg w-full bg-base-100`}></div>

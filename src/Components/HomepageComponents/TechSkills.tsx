@@ -90,7 +90,8 @@ export default function TechSkills() {
 
           <div className="w-full p-2 grid gap-1  lg:w-[50%] lg:p-0 lg:bg-none">
             <Link
-              to="/programming"
+              // to="/programming"
+              to="/programming#school-projects"
               className="bg-base-300 bg-gradient-to-r to-base-200 p-2 rounded-md">
               <div className="flex ">
                 <div className="overflow-hidden w-[40%] lg:w-[30%]">
@@ -112,7 +113,7 @@ export default function TechSkills() {
               </div>
             </Link>
             <Link
-              to="/editing"
+              to="/editing#3d-modeling"
               className="bg-base-300 bg-gradient-to-r to-base-200 p-2 rounded-md">
               <div className="flex">
                 <div className="overflow-hidden w-[40%] lg:w-[30%]">
@@ -134,7 +135,7 @@ export default function TechSkills() {
               </div>
             </Link>
             <Link
-              to="/editing"
+              to="/editing#photo-editing"
               className="bg-base-300 bg-gradient-to-r to-base-200 p-2 rounded-md">
               <div className="flex">
                 <div className="overflow-hidden w-[40%] lg:w-[30%]">
@@ -155,7 +156,7 @@ export default function TechSkills() {
               </div>
             </Link>
             <Link
-              to="/editing"
+              to="/editing#video-editing"
               className="bg-base-300 bg-gradient-to-r to-base-200 p-2 rounded-md">
               <div className="flex">
                 <div className="overflow-hidden w-[40%] lg:w-[30%]">

@@ -83,7 +83,7 @@ const Certificate = () => {
             {achievements.map((achievement, idx) => (
               <div
                 key={idx}
-                className="gap-2 md:gap-4 flex flex-col justify-between p-2 md:p-4 bg-base-100 rounded-lg w-57 md:w-75 cursor-pointer hover:shadow-lg transition hover:scale-105 duration-300 h-[15rem] md:h-[20rem]"
+                className="gap-2 md:gap-4 flex flex-col justify-between p-2 md:p-4 bg-base-100 rounded-lg w-49 md:w-75 cursor-pointer hover:shadow-lg transition hover:scale-105 duration-300 h-[15rem] md:h-[20rem]"
                 onClick={() => setSelected(achievement)}>
                 <div className="h-60 md:h-80 overflow-hidden rounded-lg">
                   <img

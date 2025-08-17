@@ -92,14 +92,14 @@ const Footer = () => {
               <div className="flex flex-col text-center">
                 <span className="font-semibold">About</span>
                 <Link
-                  to="/about#background"
-                  className="opacity-80 hover:opacity-100 hover:scale-110 transition-all duration-300">
-                  Background
-                </Link>
-                <Link
-                  to="/about#personal-info"
+                  to="/about#personalbackground"
                   className="opacity-80 hover:opacity-100 hover:scale-110 transition-all duration-300">
                   Personal Information
+                </Link>
+                <Link
+                  to="/about#education"
+                  className="opacity-80 hover:opacity-100 hover:scale-110 transition-all duration-300">
+                  Education
                 </Link>
                 <Link
                   to="/about#achievements"
