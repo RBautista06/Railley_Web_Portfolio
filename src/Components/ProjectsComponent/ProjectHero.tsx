@@ -33,7 +33,7 @@ const ProjectHero = () => {
           key={index}
           src={logo.src}
           alt=""
-          className="absolute size-12 object-contain animate-float pointer-events-none"
+          className="absolute size-8 md:size-12 object-contain animate-float pointer-events-none"
           style={{
             top: logo.top,
             left: logo.left,
@@ -44,7 +44,9 @@ const ProjectHero = () => {
 
       <div className="flex flex-col gap-10 justify-center items-center px-10 h-80 z-10 w-full ">
         <div className="flex justify-center items-center border-t px-5 py-2 border-b">
-          <span className="text-4xl font-bold">Programming Projects</span>
+          <span className="text-3xl md:text-4xl text-center font-bold text-shadow-lg">
+            Programming Projects
+          </span>
         </div>
       </div>
     </section>

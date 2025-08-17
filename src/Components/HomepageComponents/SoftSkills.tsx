@@ -1,14 +1,14 @@
 export default function SoftSkills() {
   return (
     <div className=" grid justify-center items-center pt-3" id="softSkills">
-      <div className="relative grid  overflow-hidden justify-center items-center text-left max-w-7xl lg:bg-none">
-        <div className="p-2 bg-base-300 bg-gradient-to-r to-base-200  rounded-sm mt-2 lg:mt-0 max-w-7xl mb-2 shadow-xl">
+      <div className="relative grid  overflow-hidden justify-center items-center text-left max-w-7xl lg:bg-none p-2 md:p-0">
+        <div className="p-2 bg-base-300 bg-gradient-to-r to-base-200  rounded-sm mt-2 lg:mt-0 max-w-7xl mb-2 shadow-xl ">
           <h1 className="text-xl font-bold text-shadow">Soft Skills</h1>
         </div>
 
-        <div className="w-full h-auto mt-3 grid lg:grid-cols-3 lg:gap-10">
+        <div className="w-full h-auto mt-3 grid lg:grid-cols-3 lg:gap-10 gap-3">
           {/* card */}
-          <div className=" w-full p-6 rounded-xl card lg:h-full bg-base-300 bg-gradient-to-r to-base-200">
+          <div className=" w-full p-4 md:p-6 rounded-xl card lg:h-full bg-base-300 bg-gradient-to-r to-base-200">
             <div className="grid gap-2 p-2 border-t-1 border-b-1">
               <h1 className=" font-bold text-xl ">Problem-Solving</h1>
               <p className="text-sm text-blue-100 text-justify">
@@ -29,7 +29,7 @@ export default function SoftSkills() {
               <img
                 src="/img/graphics/2.png"
                 alt=""
-                className="w-[80%] drop-shadow-xl drop-shadow-primary/50 "
+                className="w-[60%] md:w-[80%] drop-shadow-xl drop-shadow-primary/50 "
               />
             </div>
           </div>
@@ -55,7 +55,7 @@ export default function SoftSkills() {
               <img
                 src="/img/graphics/3.png"
                 alt=""
-                className="w-[80%] drop-shadow-xl drop-shadow-primary/50 "
+                className="w-[60%] md:w-[80%] drop-shadow-xl drop-shadow-primary/50 "
               />
             </div>
           </div>
@@ -81,7 +81,7 @@ export default function SoftSkills() {
               <img
                 src="/img/graphics/4.png"
                 alt=""
-                className="w-[80%] drop-shadow-xl drop-shadow-primary/50 "
+                className="w-[60%] md:w-[80%] drop-shadow-xl drop-shadow-primary/50 "
               />
             </div>
           </div>

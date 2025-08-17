@@ -9,7 +9,7 @@ import NavLinks from "../Components/NavLinks";
 
 const About = () => {
   return (
-    <div>s
+    <div>
       <NavLinks />
       <div className="flex justify-center h-auto">
         <div className="w-7xl h-auto flex flex-col">

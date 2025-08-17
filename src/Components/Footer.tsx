@@ -24,20 +24,20 @@ const Footer = () => {
     <div className="w-full flex justify-center border-t-2 mt-2 bg-base-200">
       <div className="w-7xl flex flex-col gap-2">
         <div className="border-b text-center py-2">
-          <span className="font-bold text-lg">Explore More</span>
+          <span className="font-bold md:text-lg ">Explore More</span>
         </div>
 
-        <div className="flex justify-between items-center px-5 py-2">
+        <div className="flex justify-between items-center px-5 py-2 flex-col md:flex-row gap-3 md:gap-0">
           <div>
             <img
               src="/img/graphics/ZENITHLOGOWITHNAME_WHITE.png"
               alt=""
-              className="w-100"
+              className="w-110 md:w-100"
             />
           </div>
 
           <div className="flex">
-            <div className="flex gap-10 justify-between items-start">
+            <div className="flex gap-6 md:gap-10 justify-between items-start text-sm md:text-md">
               {/* Home Section */}
               <div className="flex flex-col text-center">
                 <span className="font-semibold">Home</span>
@@ -74,17 +74,17 @@ const Footer = () => {
                 <Link
                   to="/editing#photo-editing"
                   className="opacity-80 hover:opacity-100 hover:scale-110 transition-all duration-300">
-                  Photo Editing
+                  Photo
                 </Link>
                 <Link
                   to="/editing#video-editing"
                   className="opacity-80 hover:opacity-100 hover:scale-110 transition-all duration-300">
-                  Video Editing
+                  Video
                 </Link>
                 <Link
                   to="/editing#3d-modeling"
                   className="opacity-80 hover:opacity-100 hover:scale-110 transition-all duration-300">
-                  3D Modeling
+                  3D
                 </Link>
               </div>
 
@@ -112,7 +112,7 @@ const Footer = () => {
         </div>
 
         {/* Bottom Navigation */}
-        <div className="border-b border-t py-2 flex gap-5 justify-center items-center font-semibold">
+        <div className="border-b border-t py-2 flex gap-5 justify-center items-center font-semibold text-sm md:text-md">
           <Link
             to="/"
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
@@ -136,7 +136,7 @@ const Footer = () => {
         </div>
 
         {/* Copyright */}
-        <div className="pb-2 text-center text-sm">
+        <div className="pb-2 text-center text-xs md:text-sm">
           <span className="opacity-80">
             &copy; Copyright 2025 All Rights Reserved
           </span>

@@ -6,7 +6,7 @@ const ediditingLogos = [
   { src: "/img/logo/pr.png", top: "17%", left: "50%" },
   { src: "/img/logo/ai.png", top: "75%", left: "60%" },
   { src: "/img/logo/blender.png", top: "75%", left: "30%" },
-  { src: "/img/logo/capcut.png", top: "55%", left: "80%" },
+  { src: "/img/logo/capcut.png", top: "65%", left: "80%" },
   { src: "/img/logo/md.png", top: "60%", left: "10%" },
 ];
 
@@ -23,7 +23,7 @@ const EditingHero = () => {
           key={index}
           src={logo.src}
           alt=""
-          className="absolute size-12 object-contain animate-float pointer-events-none"
+          className="absolute size-8 md:size-12 object-contain animate-float pointer-events-none"
           style={{
             top: logo.top,
             left: logo.left,

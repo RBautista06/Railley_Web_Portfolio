@@ -69,31 +69,31 @@ const Certificate = () => {
           <div
             className={`${styles.backGroundImage} text-lg w-full bg-base-100`}></div>
         </div>
-        <div className="flex flex-col gap-4 p-4 z-10 w-full">
-          <div className="p-2 rounded-lg flex gap-4 justify-between px-4 bg-gradient-to-r from-base-100 to-base-200">
-            <span className="text-center font-bold">Certificates</span>
-            <div className="flex gap-2">
+        <div className="flex flex-col gap-2 md:gap-4 p-2 md:p-4 z-10 w-full">
+          <div className="items-center rounded-lg flex gap-2 md:gap-4 justify-between py-2 px-2 md:px-4 bg-gradient-to-r from-base-100 to-base-200">
+            <span className="text-center font-bold">Certificate</span>
+            <div className="flex gap-2 ">
               {badges.map((badge, index) => (
                 <img key={index} src={badge} className="size-6" />
               ))}
             </div>
           </div>
 
-          <div className="flex flex-wrap gap-4 justify-center items-center">
+          <div className="flex flex-wrap gap-2 md:gap-4 justify-center items-center ">
             {achievements.map((achievement, idx) => (
               <div
                 key={idx}
-                className="gap-4 flex flex-col p-4 bg-base-100 rounded-lg h-auto w-101 cursor-pointer hover:shadow-lg transition hover:scale-105 duration-300"
+                className="gap-2 md:gap-4 flex flex-col justify-between p-2 md:p-4 bg-base-100 rounded-lg w-57 md:w-75 cursor-pointer hover:shadow-lg transition hover:scale-105 duration-300 h-[15rem] md:h-[20rem]"
                 onClick={() => setSelected(achievement)}>
-                <div className="h-70 overflow-hidden rounded-lg ">
+                <div className="h-60 md:h-80 overflow-hidden rounded-lg">
                   <img
                     src={achievement.src}
                     className="w-full h-full object-cover"
                     alt={achievement.title}
                   />
                 </div>
-                <div className="text-center bg-base-300 p-2 rounded-lg flex-grow">
-                  <span className="font-semibold text-shadow-xl text-sm">
+                <div className="flex items-center justify-center text-center bg-base-300 p-2 rounded-lg h-16 md:h-20 overflow-hidden">
+                  <span className="font-semibold text-shadow-xl md:text-sm text-xs line-clamp-2">
                     {achievement.title}
                   </span>
                 </div>
@@ -105,18 +105,18 @@ const Certificate = () => {
 
       {/* Modal Section */}
       {selected && (
-        <div className="fixed inset-0 bg-black/50 z-200 flex items-center justify-center">
-          <div className="bg-base-100 rounded-xl p-8 shadow-2xl w-auto h-auto relative">
+        <div className="fixed inset-0 bg-black/50 z-200 flex items-center justify-center ">
+          <div className="bg-base-100 rounded-xl p-4 md:p-8 shadow-2xl w-200 h-auto relative mx-4">
             <button
               onClick={() => setSelected(null)}
               className="absolute top-2 right-2 text-gray-500 hover:text-red-500">
               <X />
             </button>
-            <div className="overflow-hidden rounded-lg mb-4 mt-1">
+            <div className="overflow-hidden rounded-lg mb-4 mt-6 md:mt-1">
               <img
                 src={selected.src}
                 alt={selected.title}
-                className="w-full h-100 object-cover"
+                className="w-full h-auto object-cover"
               />
             </div>
             <div className="text-center bg-base-300 p-2 rounded-lg">

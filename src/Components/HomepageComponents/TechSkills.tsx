@@ -32,15 +32,15 @@ export default function TechSkills() {
       className="grid  lg:bg-gradient-to-b   justify-center items-center pt-3"
       id="technicalSkills">
       <div className=" max-w-7xl">
-        <div className="p-2 bg-base-300  bg-gradient-to-r to-base-200  rounded-sm mt-2 lg:mt-0 max-w-7xl mb-2 shadow-xl">
-          <h1 className="text-xl font-bold text-shadow text-left">
+        <div className="p-2 bg-base-300  bg-gradient-to-r to-base-200  rounded-sm mt-2 lg:mt-0 max-w-7xl mb-2 shadow-xl mx-2 md:mx-0">
+          <h1 className="text-xl font-bold text-shadow text-left ">
             Technical Skills
           </h1>
         </div>
 
         <div className="grid w-full lg:flex lg:gap-2  max-w-7xl">
           <div
-            className="relative p-2  sm:grid bg-gradient-to-b to-blue-950 overflow-hidden justify-center text-left
+            className="relative p-2  sm:grid  overflow-hidden justify-center text-left
           lg:w-[50%] lg:p-0 lg:bg-none">
             <div className="grid relative mt-2 rounded-sm overflow-hidden w-full aspect-video lg:mt-0">
               <div className="flex w-full h-full">
@@ -88,7 +88,7 @@ export default function TechSkills() {
             </div>
           </div>
 
-          <div className="w-full p-2 grid gap-1 bg-gradient-to-t to-blue-950 lg:w-[50%] lg:p-0 lg:bg-none">
+          <div className="w-full p-2 grid gap-1  lg:w-[50%] lg:p-0 lg:bg-none">
             <Link
               to="/programming"
               className="bg-base-300 bg-gradient-to-r to-base-200 p-2 rounded-md">
