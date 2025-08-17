@@ -30,7 +30,7 @@ const Footer = () => {
         <div className="flex justify-between items-center px-5 py-2 flex-col md:flex-row gap-3 md:gap-0">
           <div>
             <img
-              src="/img/graphics/ZENITHLOGOWITHNAME_WHITE.png"
+              src="./img/graphics/ZENITHLOGOWITHNAME_WHITE.png"
               alt=""
               className="w-110 md:w-100"
             />

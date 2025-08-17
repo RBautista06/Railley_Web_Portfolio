@@ -9,11 +9,11 @@ import Showcase from "../Components/Showcase";
 const showcaseProjects: ShowcaseData[] = [
   {
     media: [
-      "/img/projects/arts/3d/Dracula Gun FInals (2).gif",
-      "/img/projects/arts/3d/LAnscape123123123.jpg",
-      "/img/projects/arts/3d/Sniperwithtexture.jpg",
-      "/img/projects/arts/3d/killuabag.png",
-      "/img/projects/arts/3d/pokeball.png",
+      "./img/projects/arts/3d/Dracula Gun FInals (2).gif",
+      "./img/projects/arts/3d/LAnscape123123123.jpg",
+      "./img/projects/arts/3d/Sniperwithtexture.jpg",
+      "./img/projects/arts/3d/killuabag.png",
+      "./img/projects/arts/3d/pokeball.png",
     ],
     steps: [
       "3D Modeling",
@@ -23,17 +23,17 @@ const showcaseProjects: ShowcaseData[] = [
     repository: "",
     status: "",
     languages: [
-      "/img/logo/blender.png",
-      "/img/logo/sp.png",
-      "/img/logo/md.png",
+      "./img/logo/blender.png",
+      "./img/logo/sp.png",
+      "./img/logo/md.png",
     ],
   },
   {
     media: [
-      "/img/projects/arts/adobe/vidshowcase.gif",
-      "/img/projects/arts/adobe/introfailure.mp4",
-      "/img/projects/arts/adobe/OUTRO.mp4",
-      "/img/projects/arts/adobe/tttryyyy.mp4",
+      "./img/projects/arts/adobe/vidshowcase.gif",
+      "./img/projects/arts/adobe/introfailure.mp4",
+      "./img/projects/arts/adobe/OUTRO.mp4",
+      "./img/projects/arts/adobe/tttryyyy.mp4",
     ],
     steps: [
       "Video Editing",
@@ -43,18 +43,18 @@ const showcaseProjects: ShowcaseData[] = [
     repository: "",
     status: "Complete",
     languages: [
-      "/img/logo/pr.png",
-      "/img/logo/capcut.png",
-      "/img/logo/blender.png",
+      "./img/logo/pr.png",
+      "./img/logo/capcut.png",
+      "./img/logo/blender.png",
     ],
   },
   {
     media: [
-      "/img/projects/arts/adobe/wolv.png",
-      "/img/projects/arts/adobe/MOCKUPSHOWCASEMOCKUPSHOWCA.png",
-      "/img/projects/arts/adobe/gang.jpg",
-      "/img/projects/arts/adobe/first desgin layout.jpg",
-      "/img/projects/arts/adobe/MOCKUP TRY.jpg",
+      "./img/projects/arts/adobe/wolv.png",
+      "./img/projects/arts/adobe/MOCKUPSHOWCASEMOCKUPSHOWCA.png",
+      "./img/projects/arts/adobe/gang.jpg",
+      "./img/projects/arts/adobe/first desgin layout.jpg",
+      "./img/projects/arts/adobe/MOCKUP TRY.jpg",
     ],
     steps: [
       "Photo Editing",
@@ -63,7 +63,7 @@ const showcaseProjects: ShowcaseData[] = [
     ],
     repository: "",
     status: "",
-    languages: ["/img/logo/ps.png", "/img/logo/ai.png"],
+    languages: ["./img/logo/ps.png", "./img/logo/ai.png"],
   },
 ];
 const Editing = () => {

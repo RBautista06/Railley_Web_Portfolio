@@ -11,7 +11,7 @@ const AboutHero = () => {
         id="personalbackground">
         <div className="p-2">
           <div className="size-50 md:size-65 border-4 rounded-full overflow-hidden">
-            <img src="/img/railleyphotos/caphold2.jpg" alt="" />
+            <img src="./img/railleyphotos/caphold2.jpg" alt="" />
           </div>
         </div>
         <div className="flex flex-col gap-2 md:gap-4  md:w-200 px-2 md:px-0">

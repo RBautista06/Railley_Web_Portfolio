@@ -41,7 +41,7 @@ h-120 w-120 lg:h-160 lg:w-160 md:mt-200 md:left-40 animate-[slideInLeft_1.5s_eas
       </div>
       <div className="flex flex-end justify-center pt-2 md:pt-10  z-100">
         <img
-          src="/img/railleyphotos/gradpic.png"
+          src="./img/railleyphotos/gradpic.png"
           className="w-60 md:w-120 drop-shadow-2xl "
         />
       </div>

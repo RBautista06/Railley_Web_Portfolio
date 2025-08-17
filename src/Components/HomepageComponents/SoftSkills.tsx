@@ -27,7 +27,7 @@ export default function SoftSkills() {
             </div>
             <div className="w-full flex justify-center">
               <img
-                src="/img/graphics/2.png"
+                src="./img/graphics/2.png"
                 alt=""
                 className="w-[60%] md:w-[80%] drop-shadow-xl drop-shadow-primary/50 "
               />
@@ -53,7 +53,7 @@ export default function SoftSkills() {
             </div>
             <div className="w-full flex justify-center">
               <img
-                src="/img/graphics/3.png"
+                src="./img/graphics/3.png"
                 alt=""
                 className="w-[60%] md:w-[80%] drop-shadow-xl drop-shadow-primary/50 "
               />
@@ -79,7 +79,7 @@ export default function SoftSkills() {
             </div>
             <div className="w-full flex justify-center">
               <img
-                src="/img/graphics/4.png"
+                src="./img/graphics/4.png"
                 alt=""
                 className="w-[60%] md:w-[80%] drop-shadow-xl drop-shadow-primary/50 "
               />

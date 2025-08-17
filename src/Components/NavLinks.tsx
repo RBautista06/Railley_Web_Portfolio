@@ -47,7 +47,7 @@ export default function NavLinks() {
             <div className="flex shrink-0 items-center">
               <img
                 alt="Your Company"
-                src="/img/graphics/ZENITHLOGO_WHITE.png"
+                src="./img/graphics/ZENITHLOGO_WHITE.png"
                 className="h-4 w-auto"
               />
             </div>

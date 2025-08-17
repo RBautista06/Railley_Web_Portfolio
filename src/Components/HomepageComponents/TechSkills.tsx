@@ -3,10 +3,10 @@ import { Link } from "react-router";
 
 export default function TechSkills() {
   const media = [
-    "/img/projects/programming/providence/providence.gif",
-    "/img/projects/arts/3d/Dracula Gun FInals (2).gif",
-    "/img/projects/arts/adobe/MOCKUPSHOWCASEMOCKUPSHOWCA.png",
-    "/img/projects/arts/adobe/vidshowcase.gif",
+    "./img/projects/programming/providence/providence.gif",
+    "./img/projects/arts/3d/Dracula Gun FInals (2).gif",
+    "./img/projects/arts/adobe/MOCKUPSHOWCASEMOCKUPSHOWCA.png",
+    "./img/projects/arts/adobe/vidshowcase.gif",
   ];
 
   const titles = [
@@ -96,7 +96,7 @@ export default function TechSkills() {
               <div className="flex ">
                 <div className="overflow-hidden w-[40%] lg:w-[30%]">
                   <img
-                    src="/img/projects/programming/providence/providenceLandingPage.jpg"
+                    src="./img/projects/programming/providence/providenceLandingPage.jpg"
                     alt=""
                     className="object-fill w-70 aspect-video "
                   />
@@ -118,7 +118,7 @@ export default function TechSkills() {
               <div className="flex">
                 <div className="overflow-hidden w-[40%] lg:w-[30%]">
                   <img
-                    src="/img/projects/arts/3d/LAnscape123123123.jpg"
+                    src="./img/projects/arts/3d/LAnscape123123123.jpg"
                     alt=""
                     className="object-fill w-70 aspect-video"
                   />
@@ -140,7 +140,7 @@ export default function TechSkills() {
               <div className="flex">
                 <div className="overflow-hidden w-[40%] lg:w-[30%]">
                   <img
-                    src="/img/projects/arts/adobe/killuabag.png"
+                    src="./img/projects/arts/adobe/killuabag.png"
                     alt=""
                     className="object-cover aspect-video w-70 "
                   />
@@ -161,7 +161,7 @@ export default function TechSkills() {
               <div className="flex">
                 <div className="overflow-hidden w-[40%] lg:w-[30%]">
                   <img
-                    src="/img/projects/arts/adobe/vidshowcase.gif"
+                    src="./img/projects/arts/adobe/vidshowcase.gif"
                     alt=""
                     className="object-fill aspect-video w-70 "
                   />
