@@ -5,6 +5,7 @@ const allLogos = [
   "./img/logo/php.png",
   "./img/logo/java.png",
   "./img/logo/python.png",
+  "./img/logo/C.png",
   "./img/logo/express.png",
   "./img/logo/nodejs.png",
   "./img/logo/react.png",

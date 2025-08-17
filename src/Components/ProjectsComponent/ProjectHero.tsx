@@ -21,6 +21,7 @@ const programmingLogo = [
   { src: "./img/logo/python.png", top: "80%", left: "85%" },
   { src: "./img/logo/java.png", top: "40%", left: "15%" },
   { src: "./img/logo/flutter.png", top: "20%", left: "33%" },
+  { src: "./img/logo/C.png", top: "10%", left: "63%" },
 ];
 
 const ProjectHero = () => {
