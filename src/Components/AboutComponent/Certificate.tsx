@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FileCheck, X } from "lucide-react";
+import { X } from "lucide-react";
 import styles from "./certificate.module.css";
 
 type Achievement = {
