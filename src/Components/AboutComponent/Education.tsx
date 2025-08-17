@@ -1,19 +1,19 @@
 import { Circle, GraduationCap } from "lucide-react";
 import styles from "./education.module.css";
 const educationData = [
-  { school: "Our Lady of Fatima Antipolo", years: "2022–2025" },
-  { school: "Sumulong Memorial High School Antipolo", years: "2020–2022" },
-  { school: "San Isidro National High School", years: "2016–2020" },
-  { school: "San Isidro Elementary School", years: "2013–2016" },
-  { school: "Juan Sumulong Memorial High Schoo", years: "2010–2013" },
+  { school: "Our Lady of Fatima Antipolo", years: "2021–2025" },
+  { school: "Sumulong Memorial High School Antipolo", years: "2019–2021" },
+  { school: "San Isidro National High School", years: "2015–2019" },
+  { school: "San Isidro Elementary School", years: "2012–2015" },
+  { school: "Juan Sumulong Memorial High Schoo", years: "2009–2012" },
 ];
 
 const skillsData = [
-  "Full-Stack Website Development: Proficient in both front-end and back-end",
-  "Programming Languages: HTML, CSS, PHP, Javascript, C",
-  "Frameworks: React, Vue, Tailwind, Bootstrap, Vuetify, Express",
-  "Editing: Blender, Premiere Pro, Photoshop, Adobe Illustrator",
-  "Database Management: MySQL, MongoDB",
+  "Programming Languages: HTML, CSS, JavaScript, PHP, TypeScript, Java, C, Python, Dart",
+  "Frameworks & Libraries: React, Vue, Tailwind CSS, Bootstrap, Vuetify, Flutter",
+  "State Management: Redux, Pinia",
+  "Editing: Blender, Premiere Pro, Photoshop, Adobe Illustrator, Figma",
+  "Backend & Databases: Node.js, Express.js, MySQL, MongoDB",
 ];
 const Education = () => {
   return (

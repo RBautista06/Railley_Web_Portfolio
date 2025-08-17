@@ -8,6 +8,7 @@ const ediditingLogos = [
   { src: "./img/logo/blender.png", top: "75%", left: "30%" },
   { src: "./img/logo/capcut.png", top: "65%", left: "80%" },
   { src: "./img/logo/md.png", top: "60%", left: "10%" },
+  { src: "./img/logo/figma.png", top: "52%", left: "25%" },
 ];
 
 const EditingHero = () => {
