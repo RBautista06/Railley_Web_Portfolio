@@ -6,7 +6,7 @@ export default function SoftSkills() {
           <h1 className="text-xl font-bold text-shadow">Soft Skills</h1>
         </div>
 
-        <div className="w-full h-auto mt-3 grid lg:grid-cols-3 lg:gap-10 gap-3">
+        <div className="w-full h-auto mt-3 grid lg:grid-cols-3 lg:gap-5 gap-3">
           {/* card */}
           <div className=" w-full p-4 md:p-6 rounded-xl card lg:h-full bg-base-300 bg-gradient-to-r to-base-200">
             <div className="grid gap-2 p-2 border-t-1 border-b-1">

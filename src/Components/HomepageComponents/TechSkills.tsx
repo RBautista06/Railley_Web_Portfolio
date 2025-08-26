@@ -1,5 +1,7 @@
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useState, useEffect } from "react";
 import { Link } from "react-router";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function TechSkills() {
   const media = [
@@ -15,8 +17,32 @@ export default function TechSkills() {
     "Photo Editing",
     "Video Editing",
   ];
-  const [selectedIndex, setSelectedIndex] = useState(0);
 
+  const variants = {
+    enter: (direction: number) => ({
+      x: direction > 0 ? 300 : -300,
+      opacity: 0,
+    }),
+    center: {
+      x: 0,
+      opacity: 1,
+    },
+    exit: (direction: number) => ({
+      x: direction > 0 ? -300 : 300,
+      opacity: 0,
+    }),
+  };
+
+  const [selectedIndex, setSelectedIndex] = useState(0);
+  const [direction, setDirection] = useState(0);
+  const nextSlide = () => {
+    setDirection(1);
+    setSelectedIndex((prev) => (prev + 1) % media.length);
+  };
+  const prevSlide = () => {
+    setDirection(-1);
+    setSelectedIndex((prev) => (prev - 1 + media.length) % media.length);
+  };
   // Manage transition class
   const [transitioning, setTransitioning] = useState(false);
 
@@ -42,24 +68,44 @@ export default function TechSkills() {
           <div
             className="relative p-2  sm:grid  overflow-hidden justify-center text-left
           lg:w-[50%] lg:p-0 lg:bg-none">
-            <div className="grid relative mt-2 rounded-sm overflow-hidden w-full aspect-video lg:mt-0">
-              <div className="flex w-full h-full">
-                {media[selectedIndex].endsWith(".mp4") ? (
-                  <video
-                    src={media[selectedIndex]}
-                    controls
-                    autoPlay
-                    loop
-                    className="object-contain w-full"
-                  />
-                ) : (
-                  <img
-                    src={media[selectedIndex]}
-                    alt=""
-                    className="object-fill w-200"
-                  />
-                )}
-              </div>
+            <div className="grid relative mt-2 rounded-sm overflow-hidden w-full aspect-video lg:mt-0 ">
+              <AnimatePresence initial={false} custom={direction}>
+                <motion.div
+                  key={selectedIndex}
+                  custom={direction}
+                  variants={variants}
+                  initial="enter"
+                  animate="center"
+                  exit="exit"
+                  transition={{ duration: 0.3 }}
+                  className="flex w-full h-full">
+                  {media[selectedIndex].endsWith(".mp4") ? (
+                    <video
+                      src={media[selectedIndex]}
+                      controls
+                      autoPlay
+                      loop
+                      className="object-contain w-full"
+                    />
+                  ) : (
+                    <img
+                      src={media[selectedIndex]}
+                      alt=""
+                      className="object-fill w-200"
+                    />
+                  )}
+                </motion.div>
+              </AnimatePresence>
+              <button
+                onClick={prevSlide}
+                className="absolute left-3 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full">
+                <ChevronLeft size={15} />
+              </button>
+              <button
+                onClick={nextSlide}
+                className="absolute right-3 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full">
+                <ChevronRight size={15} />
+              </button>
             </div>
 
             {/* Title with animation */}

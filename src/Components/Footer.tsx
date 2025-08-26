@@ -32,7 +32,7 @@ const Footer = () => {
             <img
               src="./img/graphics/ZENITHLOGOWITHNAME_WHITE.png"
               alt=""
-              className="w-110 md:w-100"
+              className="w-90 md:w-100"
             />
           </div>
 

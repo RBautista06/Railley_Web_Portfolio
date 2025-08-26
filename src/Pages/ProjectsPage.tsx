@@ -11,7 +11,7 @@ const showcaseProjects: ShowcaseData[] = [
       "./img/projects/programming/providence/providenceLandingPage.jpg",
       "./img/projects/programming/providence/providencemap.jpeg",
       "./img/projects/programming/providence/providenceInternmentform.jpeg",
-      "/vids/providence.mp4",
+      "./vids/providence.mp4",
     ],
     steps: [
       "iLocate: An Online Record Management System with Email Notification for Providence Memorial Park-Antipolo",
@@ -33,7 +33,7 @@ const showcaseProjects: ShowcaseData[] = [
       "./img/projects/programming/cpse/cpsehomepage.jpeg",
       "./img/projects/programming/cpse/cpselanding.jpeg",
       "./img/projects/programming/cpse/cpse barcodegen.jpeg",
-      "/vids/cpse.mp4",
+      "./vids/cpse.mp4",
     ],
     steps: [
       "A Web-based Sales and Inventory Management System with Barcode Scanner for CPSE Enterprises.",
@@ -81,7 +81,7 @@ const showcasePersonalProjects: ShowcaseData[] = [
       "./img/projects/programming/pokedex/evolutiomChart.png",
       "./img/projects/programming/pokedex/height and evolutionchart.png",
 
-      "/vids/pokedex.mp4",
+      "./vids/pokedex.mp4",
     ],
     steps: [
       "Pokedex",
@@ -102,7 +102,7 @@ const showcasePersonalProjects: ShowcaseData[] = [
       "./img/projects/programming/gameVault/Selection.png",
       "./img/projects/programming/gameVault/details.png",
       "./img/projects/programming/gameVault/details2.png",
-      "/vids/gamevault.mp4",
+      "./vids/gamevault.mp4",
     ],
     steps: [
       "GameVault",
@@ -127,7 +127,7 @@ const showcasePersonalProjects: ShowcaseData[] = [
       "./img/projects/programming/realtimechat/homepage.png",
       "./img/projects/programming/realtimechat/chatsettings.png",
 
-      "/vids/realtimeChat.mp4",
+      "./vids/realtimeChat.mp4",
     ],
     steps: [
       "Real Time Chat App",
@@ -163,7 +163,7 @@ const showcasePersonalProjects: ShowcaseData[] = [
     ],
 
     repository: "https://github.com/RBautista06/Lynx",
-    status: "Ongoing",
+    status: "In Progress",
     languages: [
       "./img/logo/react.png",
       "./img/logo/ts.png",
