@@ -4,14 +4,14 @@ import { Link } from "react-router";
 export default function TechSkills() {
   const media = [
     "./img/projects/programming/providence/providence.gif",
+    "./img/projects/programming/pokedex/landing.png",
     "./img/projects/arts/3d/Dracula Gun FInals (2).gif",
-    "./img/projects/arts/adobe/MOCKUPSHOWCASEMOCKUPSHOWCA.png",
     "./img/projects/arts/adobe/vidshowcase.gif",
   ];
 
   const titles = [
-    "Web Development",
-    "3D Modelling",
+    "Web Dev School Projects",
+    "Web Dev Pesonal Projects",
     "Photo Editing",
     "Video Editing",
   ];
@@ -103,11 +103,34 @@ export default function TechSkills() {
                 </div>
                 <div className="px-2 py-1 grid w-[75%]">
                   <h1 className="text-lg text-left font-bold  md:text-xl">
-                    Web Development
+                    Web Dev School Projects
                   </h1>
                   <p className="text-left text-xs md:text-sm">
-                    Web Developing Using HTML, CSS, PHP, JAVASCRIPT,
-                    TAILWINDCSS, BOOTSTRAP, REACT, EXPRESS
+                    Web Developing Using Only Vanilla HTML, CSS, PHP,
+                    JAVASCRIPT, MYSQL, VUE, VUETIFY
+                  </p>
+                </div>
+              </div>
+            </Link>
+            <Link
+              // to="/programming"
+              to="/programming#personal-projects"
+              className="bg-base-300 bg-gradient-to-r to-base-200 p-2 rounded-md">
+              <div className="flex ">
+                <div className="overflow-hidden w-[40%] lg:w-[30%]">
+                  <img
+                    src="./img/projects/programming/realtimechat/chat_landingPage.png"
+                    alt=""
+                    className="object-cover w-70 aspect-video  "
+                  />
+                </div>
+                <div className="px-2 py-1 grid w-[75%]">
+                  <h1 className="text-lg text-left font-bold  md:text-xl">
+                    Web Dev Personal Projects
+                  </h1>
+                  <p className="text-left text-xs md:text-sm">
+                    Web Developing Using REACT, EXPRESS, NODEJS, MONGODB
+                    TYPESCRIPT, HTML, CSS, JAVASCRIPT, TAILWINDCSS, VUE
                   </p>
                 </div>
               </div>
@@ -135,19 +158,19 @@ export default function TechSkills() {
               </div>
             </Link>
             <Link
-              to="/editing#photo-editing"
+              to="/editing#video-editing"
               className="bg-base-300 bg-gradient-to-r to-base-200 p-2 rounded-md">
               <div className="flex">
                 <div className="overflow-hidden w-[40%] lg:w-[30%]">
                   <img
-                    src="./img/projects/arts/adobe/killuabag.png"
+                    src="./img/projects/arts/adobe/vidshowcase.gif"
                     alt=""
                     className="object-cover aspect-video w-70 "
                   />
                 </div>
                 <div className="px-2 py-1 grid w-[75%]">
                   <h1 className="text-lg text-left font-bold  md:text-xl">
-                    Photo Editing
+                    Photo/Video Editing
                   </h1>
                   <p className="text-left text-xs md:text-sm">
                     Photo Editing using Photoshop, and Adobe Illustrator
@@ -155,7 +178,7 @@ export default function TechSkills() {
                 </div>
               </div>
             </Link>
-            <Link
+            {/* <Link
               to="/editing#video-editing"
               className="bg-base-300 bg-gradient-to-r to-base-200 p-2 rounded-md">
               <div className="flex">
@@ -176,7 +199,7 @@ export default function TechSkills() {
                   </p>
                 </div>
               </div>
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>
