@@ -6,7 +6,7 @@ export type ShowcaseData = {
   media: string[];
   steps: string[];
   repository?: string;
-  status?: "Complete" | "In Progress";
+  status?: "Complete" | "In Progress" | "";
   languages: string[];
 };
 
