@@ -29,12 +29,12 @@ const AboutHero = () => {
             </div>
             <div className="flex">
               <span className="w-25 md:w-35 font-bold">Date of Birth:</span>
-              <span className="">April, 06, 2003</span>
+              <span className="">April 6, 2003</span>
             </div>
             <div className="flex">
               <span className="w-35 md:w-35 font-bold">Address:</span>
               <span className="">
-                Serrato Compound San Jose Ext Bgy San Isidro Antipolo 1870
+                Serrato Compound, San Jose Ext., Brgy. San Isidro, Antipolo 1870
               </span>
             </div>
             <div className="flex">

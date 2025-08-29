@@ -5,7 +5,7 @@ const educationData = [
   { school: "Sumulong Memorial High School Antipolo", years: "2019–2021" },
   { school: "San Isidro National High School", years: "2015–2019" },
   { school: "San Isidro Elementary School", years: "2012–2015" },
-  { school: "Juan Sumulong Memorial High Schoo", years: "2009–2012" },
+  { school: "Juan Sumulong Elementary School", years: "2009–2012" },
 ];
 
 const skillsData = [

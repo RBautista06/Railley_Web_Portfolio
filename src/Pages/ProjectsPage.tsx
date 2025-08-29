@@ -132,7 +132,7 @@ const showcasePersonalProjects: ShowcaseData[] = [
     steps: [
       "Real Time Chat App",
       "Designed to explore and apply real-time web technologies, enabling users to send, receive, and search messages instantly across devices.",
-      "Developed as a personal learning project in July 2025 to gain hands-on experience with the MERN stack, Typescript and Socket.IO.",
+      "Developed as a personal learning project in July 2025 to gain hands-on experience with the MERN stack, Typescript, Cloudinary and Socket.IO.",
     ],
     repository: "https://github.com/RBautista06/real-time-chat",
     status: "Complete",
@@ -159,7 +159,7 @@ const showcasePersonalProjects: ShowcaseData[] = [
     steps: [
       "Lynx - Social Media",
       "A social media platform where users can share posts, engage with others through likes and comments, and connect in real time.",
-      "Developed as a personal learning project in July 2025 to gain hands-on experience with the MERN stack, TypeScript, Redux, and Socket.IO.",
+      "Developed as a personal learning project in July 2025 to gain hands-on experience with the MERN stack, TypeScript, Redux, Cloudinary and Socket.IO.",
     ],
 
     repository: "https://github.com/RBautista06/Lynx",
